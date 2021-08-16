@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WDF-4023</title>
+    <link href="img/favicon.jpg" rel="icon" type="image/jpg">
+    <link rel="stylesheet" href="fontawesomepro/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+    .head {
+        font-family: 'Satisfy', cursive;
+        height: 100vh;
+        background-image: url('img/bg1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: center; */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+    }
+
+    .head .container .button a {
+        color: black;
+        background-color: #e0d4be;
+        text-decoration: none;
+        padding: 5px 10px;
+        font-size: 20px;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .task1 {
+        font-family: 'Abel', sans-serif;
+        width: 100%;
+        height: 100vh;
+        background-image: url("img/blending\ egg.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: center; */
+
+        text-align: center;
+        line-height: 100vh;
+    }
+
+    .task1 h2 {
+        margin: 0;
+    }
+
+    .task2 h2 {
+        margin: 0;
+    }
+
+    .task2 {
+        font-family: 'Abel', sans-serif;
+        width: 100%;
+        height: 300px;
+
+        text-align: center;
+        line-height: 300px;
+
+        position: relative;
+    }
+
+    .task2 .container img {
+        width: 200px;
+        height: 200px;
+
+        position: absolute;
+        top: 50px;
+        left: 230px;
+    }
+
+    .task3 {
+        font-family: 'Abel', sans-serif;
+        width: 100%;
+        height: 200px;
+        background-color: #e0d4be;
+
+        text-align: center;
+        line-height: 200px;
+
+        position: relative;
+    }
+
+    .task3 .container img {
+        width: 100px;
+        height: 80px;
+
+        position: absolute;
+        top: 50px;
+        right: 560px;
+    }
+
+    .task4 {
+        font-family: 'Abel', sans-serif;
+        width: 100%;
+        height: 300px;
+
+        text-align: center;
+        line-height: 300px;
+
+        position: relative;
+    }
+
+    .task4 .container img:nth-child(1) {
+        width: 150px;
+        height: 150px;
+
+        position: absolute;
+        top: 75px;
+        left: 0;
+    }
+
+    .task4 .container img:nth-child(2) {
+        width: 150px;
+        height: 150px;
+
+        margin-right: 50px;
+
+        position: absolute;
+        top: 75px;
+        right: 0;
+    }
+
+    .task5 {
+        font-family: 'Abel', sans-serif;
+        width: 100%;
+        height: 150px;
+
+        text-align: center;
+        line-height: 150px;
+    }
+
+    .cake {
+        font-family: 'Satisfy', cursive;
+        width: 100%;
+        height: 250px;
+
+        /* text-align: center;
+        line-height: 250px; */
+        overflow: hidden;
+
+        position: relative;
+    }
+
+    .cake .container .text {
+        font-size: 20px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .cake .container img {
+        width: 150px;
+        height: 200px;
+
+        position: absolute;
+        top: 25px;
+        right: 300px;
+
+        animation: cake 2s ease infinite;
+    }
+
+    @keyframes cake {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+
+    .cake .container .circle {
+        position: absolute;
+        bottom: -100%;
+
+        animation: fly 4s ease-in-out infinite;
+    }
+
+    .cake .container .circle:nth-child(1) {
+        width: 10px;
+        height: 10px;
+        left: 10%;
+        background-color: #ffc04b;
+        animation-delay: 0.5s;
+    }
+
+    .cake .container .circle:nth-child(2) {
+        width: 10px;
+        height: 10px;
+        left: 15%;
+        background-color: #ffc04b;
+        animation-delay: 2s;
+    }
+
+    .cake .container .circle:nth-child(3) {
+        width: 10px;
+        height: 10px;
+        left: 25%;
+        background-color: #ffc04b;
+        animation-delay: 1.3s;
+    }
+
+    .cake .container .circle:nth-child(4) {
+        width: 10px;
+        height: 10px;
+        left: 38%;
+        background-color: #ffc04b;
+        animation-delay: 1s;
+    }
+
+    .cake .container .circle:nth-child(5) {
+        width: 10px;
+        height: 10px;
+        left: 50%;
+        background-color: #ffc04b;
+        animation-delay: 3s;
+    }
+
+    .cake .container .circle:nth-child(6) {
+        width: 10px;
+        height: 10px;
+        left: 58%;
+        background-color: #ffc04b;
+        animation-delay: 2.8s;
+    }
+
+    .cake .container .circle:nth-child(7) {
+        width: 10px;
+        height: 10px;
+        left: 60%;
+        background-color: #ffc04b;
+        animation-delay: 2.5s;
+    }
+
+    .cake .container .circle:nth-child(8) {
+        width: 10px;
+        height: 10px;
+        left: 85%;
+        background-color: #ffc04b;
+        animation-delay: 3.3s;
+    }
+
+    @keyframes fly {
+        0% {
+            bottom: -100%;
+        }
+
+        100% {
+            bottom: 100%;
+            transform: rotate(270deg);
+        }
+    }
+
+    .wish {
+        font-family: 'Abel', sans-serif;
+        width: 100%;
+        height: 300px;
+        font-size: 20px;
+
+        position: relative;
+    }
+
+    .wish .container img {
+        width: 250px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 0.5 black;
+
+        position: absolute;
+        top: 0;
+        left: 20%;
+    }
+
+    .wish .container h3 {
+        width: 600px;
+
+        position: absolute;
+        top: 75px;
+        left: 45%;
+    }
+</style>
+
+<body>
+    <div class="head">
+        <div class="container">
+            <div class="button">
+                <a href="https://aungmyo-genius.github.io/teampagev1/
+                ">Team page</a>
+            </div>
+            <h1>Oops... <br /> Today is your birthday! </br> <span>Time to bake a cake. </br></br>Please follow my cake
+                    baking journey...</span></h1>
+        </div>
+    </div>
+
+    <div class="task1">
+        <div class="container">
+            <h2>Task #1: Blend egg with sugar and flour</h2>
+        </div>
+    </div>
+
+    <div class="task2">
+        <div class="container">
+            <img src="img/pourbatter.jpg" alt="batter">
+            <h2>Task #2: Time to pour batter in a pan</h2>
+        </div>
+    </div>
+
+    <div class="task3">
+        <div class="container">
+            <img src="https://media.giphy.com/media/Q93JflasUMTDMerORy/giphy.gif" alt="gif">
+            <h2>Task #3: Bake Time...</h2>
+        </div>
+    </div>
+
+    <div class="task4">
+        <div class="container">
+            <img src="https://media.giphy.com/media/ESTS0Q8uKQYgnxUrCp/giphy.gif" alt="gif">
+            <img src="https://media.giphy.com/media/ESTS0Q8uKQYgnxUrCp/giphy.gif" alt="gif">
+
+            <h2>Task #4: Let's add some icing</h2>
+        </div>
+    </div>
+
+    <div class="task5">
+        <div class="container">
+            <h2>Task #5: It's almost ready.</h2>
+        </div>
+    </div>
+
+    <div class="cake">
+        <div class="container">
+            <div class="text">
+                <h1>Happy 30<sup>th</sup> Birthday Sayar</h1>
+                <h2><i class="fas fa-heart"></i> Many happy returns of the day<i class="fas fa-heart"></i></h2>
+            </div>
+            <img src="img/cake.jpg" alt="cake">
+
+            <div class="container">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wish">
+        <div class="container">
+            <img src="img/sayar/1.jpg" alt="sayar">
+            <h3>
+                Happy birthday to my favourite teacher. May your birthday bring you all manner of happiness. Your
+                lessons
+                have prepared me better and better for the many challenges ahead, thanks a million. Have a great
+                birthday Sir.
+            </h3>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- Happy birthday to my favourite teacher. May your birthday bring you all manner of happiness. Your lessons
+have prepared me better and better for the many challenges ahead, thanks a million. Have a great 
+birthday Sir. -->
